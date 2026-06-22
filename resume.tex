@@ -32,8 +32,8 @@
 \addtolength{\oddsidemargin}{-0.375in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.3in}
 
 \urlstyle{same}
 
@@ -43,8 +43,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-2pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 %-------------------------
 % Custom commands
@@ -74,10 +74,10 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,topsep=2pt,itemsep=2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[topsep=1pt,itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -95,7 +95,7 @@
 %-----------SUMMARY-----------------
 \section{Summary}
   \resumeSubHeadingListStart
-    \item\small{Final-year Electronics \& Communication Engineering student who makes hardware and software play nice. From designing custom PCBs and writing bare-metal firmware to scaling cloud platforms for 100,000+ users without breaking a sweat, I build systems that actually work. Actively pushing the envelope in renewable energy research and real-world IoT deployments.}
+    \item\small{Final-year ECE student building systems that bridge hardware and software, custom PCBs, bare-metal firmware, cloud platforms at scale, and real-world IoT deployments with active research in renewable energy.}
   \resumeSubHeadingListEnd
 
 
@@ -105,6 +105,15 @@
     \resumeSubheading
       {Dr. B. C. Roy Engineering College}{Durgapur, West Bengal}
       {B.Tech in Electronics \& Communication Engineering (ECE); Final-year (Batch 2026)}{Expected Jun. 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {PGET-2026 -- Rank \textbf{35} in ECE}{Jun. 2026}
+      {Post-Graduate Entrance Test, MAKAUT (West Bengal) -- General Category}{}
   \resumeSubHeadingListEnd
 
 
@@ -129,18 +138,14 @@
       {BSNL}{Burdwan, West Bengal}
       {Telecommunications Intern}{Summer 2025}
       \resumeItemListStart
-        \resumeItem{Routing \& Switching}
-          {Analyzed telecom-grade routing and switching protocols used in live networks.}
-        \resumeItem{Field Support}
-          {Assisted field engineers in troubleshooting signal integrity issues for fiber optic endpoints.}
+        \resumeItem{Network Analysis}{Studied live telecom-grade routing/switching protocols; assisted field engineers in troubleshooting fiber optic signal integrity.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Tata Power SDI (PMSGY)}{Maithon, Jharkhand}
       {Supervising Engineer Trainee}{Winter 2026}
       \resumeItemListStart
-        \resumeItem{Training Focus}{Supervised solar PV cell installation, safety compliance, and on-site commissioning.}
-        \resumeItem{Site Work}{Assisted in PV site surveys, panel mounting, and safety inspections.}
+        \resumeItem{Solar Commissioning}{Supervised solar PV installation and safety compliance; conducted site surveys, panel mounting, and on-site inspections.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -149,15 +154,14 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeHeading{Implementation of 800W MPPT using ESP32 for Rural Electrification}{Academic}{ESP32 $\bullet$ MPPT $\bullet$ Incremental Conductance}{Winter 2026}
+    \resumeHeading{800W Synchronous MPPT Controller (ESP32)}{Academic}{ESP32 $\bullet$ MPPT $\bullet$ Incremental Conductance}{Winter 2026}
       \resumeItemListStart
-        \resumeItem{Overview}{Designed and implemented an 800W synchronous MPPT solar charge controller to improve conversion efficiency for rural electrification and smart energy management.}
+        \resumeItem{Overview}{Designed and built an 800W synchronous MPPT solar charge controller targeting rural electrification; achieved high conversion efficiency via INC algorithm.}
       \resumeItemListEnd
 
-    \resumeHeading{Intelligent Smart Grid \& Energy Telemetry Platform}{Academic}{Edge Computing $\bullet$ Power Metrology $\bullet$ Real-Time Cloud DB $\bullet$ Web Framework}{Fall 2025}
+    \resumeHeading{Intelligent Smart Grid \& Energy Telemetry Platform}{Academic}{Edge Computing $\bullet$ Power Metrology $\bullet$ Cloud DB $\bullet$ Web}{Fall 2025}
       \resumeItemListStart
-        \resumeItem{Overview}{Microcontroller-driven prepaid energy meter streaming real-time telemetry to a secure cloud database and a responsive web dashboard.}
-        \resumeItem{Key Results}{Implemented high-precision metering and remote relay cutoff with local response $<200$ms.}
+        \resumeItem{Overview}{MCU-driven prepaid energy meter with real-time cloud telemetry, responsive web dashboard, and remote relay cutoff ($<200$ms response).}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -165,14 +169,14 @@
 %-----------RESEARCH & PUBLICATIONS-----------------
 \section{Research \& Publications}
   \resumeSubHeadingListStart
-    \resumeHeading{Weather-Integrated PEMS for Residential Hybrid Solar Installations}{Electrica journal}{Under Review (Submission ID: electr-2025-0424)}{Winter 2025}
+    \resumeHeading{Weather-Integrated PEMS for Residential Hybrid Solar}{Electrica}{Under Review -- electr-2025-0424}{Winter 2025}
       \resumeItemListStart
-        \resumeItem{Overview}{Predictive energy management for residential hybrid solar using weather inputs and smart metering to improve scheduling and efficiency.}
+        \resumeItem{Overview}{Predictive energy management using weather data and smart metering to optimize scheduling in residential hybrid solar systems.}
       \resumeItemListEnd
 
-    \resumeHeading{ESP32-Based Synchronous MPPT SCC with INC Algorithm}{ICICET 2026}{Accepted for Presentation (Speaker Category, Track 7)}{Aug. 2026}
+    \resumeHeading{ESP32-Based Synchronous MPPT SCC with INC Algorithm}{ICICET 2026}{Accepted -- Speaker Category, Track 7}{Aug. 2026}
       \resumeItemListStart
-        \resumeItem{Overview}{Abstract accepted for presentation at Bolpur, Shantiniketan. Demonstrated high conversion efficiency and strong applicability in renewable energy systems for rural electrification.}
+        \resumeItem{Overview}{Presentation at Bolpur, Shantiniketan; demonstrated high conversion efficiency for rural electrification via synchronous MPPT with INC.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
   
